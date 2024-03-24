@@ -27,3 +27,10 @@ class HM:
                     info[str(hardware)][str(sensor.Identifier)] = sensor.get_Value()
 
         return info
+
+    @staticmethod
+    def get_sensor(sensor, info, n_digits=2):
+        for hardware in info:
+            if sensor in info[hardware]:
+                return round(info[hardware][sensor], n_digits)
+        return None
