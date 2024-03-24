@@ -5,8 +5,8 @@ Python interface for [OpenHardwareMonitor](https://github.com/openhardwaremonito
 ### Usage
 #### Install
 The current version is based on :
-* [OpenHardwareMonitor v0.9.6](https://openhardwaremonitor.org/files/openhardwaremonitor-v0.9.6.zip) `OpenHardwareMonitorLib.dll`.
-* [LibreHardwareMonitor v0.9.3](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases/download/v0.9.3/LibreHardwareMonitor-net472.zip) `LibreHardwareMonitorLib.dll` with optional `HidSharp.dll`.
+* OpenHardwareMonitor [v0.9.6](https://openhardwaremonitor.org/files/openhardwaremonitor-v0.9.6.zip) `OpenHardwareMonitorLib.dll`.
+* LibreHardwareMonitor [v0.9.3](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases/download/v0.9.3/LibreHardwareMonitor-net472.zip) `LibreHardwareMonitorLib.dll` with optional `HidSharp.dll`.
 
 This project require [pythonnet](https://github.com/pythonnet/pythonnet) (`pip install pythonnet`).
 
