@@ -16,7 +16,9 @@ Check [example_basic.py](example_basic.py) for usage example.
 ### Examples
 #### `example_basic.py`
 
-OpenHardwareMonitor as admin:
+<details>
+<summary>OpenHardwareMonitor as admin</summary>
+
 ```
 {
   "OpenHardwareMonitor.Hardware.CPU.AMD17CPU": {
@@ -28,7 +30,11 @@ OpenHardwareMonitor as admin:
   }
 }
 ```
-LibreHardwareMonitor as admin:
+
+</details>
+<details>
+<summary>LibreHardwareMonitor as admin</summary>
+
 ```
 {
   "LibreHardwareMonitor.Hardware.Cpu.Amd17Cpu": {
@@ -44,7 +50,10 @@ LibreHardwareMonitor as admin:
 }
 ```
 
-OpenHardwareMonitor as user:
+</details>
+<details>
+<summary>OpenHardwareMonitor as user</summary>
+
 ```
 {
   "OpenHardwareMonitor.Hardware.CPU.AMD17CPU": {},
@@ -53,7 +62,11 @@ OpenHardwareMonitor as user:
   }
 }
 ```
-LibreHardwareMonitor as user:
+
+</details>
+<details>
+<summary>LibreHardwareMonitor as user</summary>
+
 ```
 {
   "LibreHardwareMonitor.Hardware.Cpu.Amd17Cpu": {
@@ -67,6 +80,7 @@ LibreHardwareMonitor as user:
 }
 ```
 
+</details>
 
 #### Acknowledgement
 This work is inspired by [1](https://stackoverflow.com/a/62936850), [2](https://stackoverflow.com/a/49909330).
