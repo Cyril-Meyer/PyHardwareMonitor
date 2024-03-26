@@ -9,6 +9,7 @@ The current version is based on :
 * LibreHardwareMonitor [v0.9.3](https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases/download/v0.9.3/LibreHardwareMonitor-net472.zip) `LibreHardwareMonitorLib.dll` with optional `HidSharp.dll`.
 
 This project require [pythonnet](https://github.com/pythonnet/pythonnet) (`pip install pythonnet`).
+The example `example_systray.py` require [pystray](https://github.com/moses-palmer/pystray) (`pip install pystray`).
 
 Check [example_basic.py](example_basic.py) for usage example.
 
