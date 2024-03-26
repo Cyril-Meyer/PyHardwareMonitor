@@ -1,10 +1,12 @@
 import argparse
 import json
+import threading
 import time
-import lhm
-# import ohm
+
 import pystray
 
+import lhm
+# import ohm
 import icons
 
 parser = argparse.ArgumentParser()
@@ -40,8 +42,23 @@ stray = pystray.Icon('PyHardwareMonitor',
                      menu=pystray.Menu(stray_menu)
                      )
 
-stray.run_detached()
+def update():
+    s_sleep = 0.1
+    n_sleep = int(args.refresh_rate / s_sleep)
 
-while True:
-    stray.update_menu()
-    time.sleep(args.refresh_rate)
+    while True:
+        if stray is None:
+                break
+        else:
+            stray.update_menu()
+
+        for i in range(n_sleep):
+            time.sleep(s_sleep)
+            if stray is None:
+                break
+
+update_thread = threading.Thread(target=update)
+update_thread.start()
+
+stray.run()
+stray = None
