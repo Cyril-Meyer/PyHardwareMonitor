@@ -15,6 +15,13 @@ Check [example_basic.py](example_basic.py) for usage example.
 
 
 ### Examples
+#### `example_systray.py`
+
+`python example_systray.py --sensors "/amdcpu/0/temperature/2" "/gpu-nvidia/0/temperature/2" --show-value --refresh-rate 5.0`
+![image](https://github.com/Cyril-Meyer/PyHardwareMonitor/assets/69190238/59a1dbed-0ee8-47d2-9464-d858c0dd4b20)
+
+
+
 #### `example_basic.py`
 
 <details>
